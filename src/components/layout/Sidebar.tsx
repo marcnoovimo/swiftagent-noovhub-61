@@ -9,6 +9,7 @@ import { cn } from '@/lib/utils';
 import { 
   BarChart3,
   Calendar, 
+  Database,
   FileText, 
   Headphones, 
   Home, 
@@ -51,6 +52,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isOpen = true }) => {
     { name: 'Communication', path: '/messages', icon: <MessageSquare size={iconSize} /> },
     { name: 'Statistiques', path: '/stats', icon: <BarChart3 size={iconSize} /> },
     { name: 'Support', path: '/support', icon: <Headphones size={iconSize} /> },
+    { name: 'Intégration Notion', path: '/notion-integration', icon: <Database size={iconSize} /> },
     { name: 'Paramètres', path: '/settings', icon: <Settings size={iconSize} /> },
   ];
   

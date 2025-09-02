@@ -26,6 +26,7 @@ const AgentProfile = lazy(() => import('./pages/AgentProfile'));
 const Calendar = lazy(() => import('./pages/Calendar'));
 const Settings = lazy(() => import('./pages/Settings'));
 const Support = lazy(() => import('./pages/Support'));
+const NotionIntegration = lazy(() => import('./pages/NotionIntegration'));
 
 // Loading fallback
 const LoadingFallback = () => (
@@ -70,6 +71,7 @@ function App() {
                   <Route path="/agent-profile" element={<AgentProfile />} />
                   <Route path="/settings" element={<Settings />} />
                   <Route path="/support" element={<Support />} />
+                  <Route path="/notion-integration" element={<NotionIntegration />} />
                   <Route path="*" element={<NotFound />} />
                 </Route>
               </Routes>

@@ -1,4 +1,3 @@
-
 import { useMemo } from 'react';
 import { StatsData } from '@/types/stats';
 import { formatCurrency } from '@/lib/utils';
@@ -16,28 +15,28 @@ export const useStatsSynthesisData = (stats: StatsData | undefined, isMobile: bo
     
     return [
       {
-        title: "Unités de ventes avants contrats",
+        title: "Unites de ventes avants contrats",
         value: stats.totalCompromis,
         icon: <Building2 size={isMobile ? 14 : 16} className="text-noovimo-500" />
       },
       {
-        title: "Unités de ventes actés",
+        title: "Unites de ventes actes",
         value: stats.totalSales,
         icon: <Home size={isMobile ? 14 : 16} className="text-noovimo-500" />
       },
       {
         title: "Honoraires compromis",
-        value: formatCurrency(stats.totalVolume * 0.05), // Estimation des honoraires sur compromis
+        value: formatCurrency(stats.totalVolume * 0.05),
         icon: <FileCheck size={isMobile ? 14 : 16} className="text-noovimo-500" />
       },
       {
-        title: "Honoraires actés",
+        title: "Honoraires actes",
         value: formatCurrency(stats.totalCommission),
         icon: <FileText size={isMobile ? 14 : 16} className="text-noovimo-500" />
       },
       {
         title: "Commissions agents",
-        value: formatCurrency(stats.totalCommission * 0.7), // Estimation des commissions agents
+        value: formatCurrency(stats.totalCommission * 0.7),
         icon: <Users size={isMobile ? 14 : 16} className="text-noovimo-500" />
       }
     ];
